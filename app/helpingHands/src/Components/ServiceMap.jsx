@@ -11,7 +11,6 @@ function ServiceMap(props) {
     iconAnchor: [10, 41],
     popupAnchor: [2, -40]
   });
-  console.log(props.isLoaded)
 
   if (props.isLoaded) {
     // If data is loaded, show the map with markers

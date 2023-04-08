@@ -10,9 +10,13 @@ function ServiceInfo(props) {
       props.data.features.map(location => (
         <Card>
           <Card.Body>
-            <Card.Title>{location.properties.name_}</Card.Title>
+            <Card.Title>{location.properties.name}</Card.Title>
             <Card.Text>
-              {location.properties.address}
+              Address: {location.properties.address}
+              <br/>
+              Phone: {location.properties.phone}
+              <br/>
+              Hours: {location.properties.hours}
             </Card.Text>
           </Card.Body>
         </Card>

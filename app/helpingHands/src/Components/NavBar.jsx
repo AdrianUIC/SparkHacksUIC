@@ -20,7 +20,8 @@ const Navbar = (props) => {
         <button onClick= {() => props.passedFunc("workforce_centers")}>Workforce Centers</button>
         <button onClick= {() => props.passedFunc("food_banks")}>Food Banks</button>
         <button onClick= {() => props.passedFunc("shelters")}>Shelters</button>
-        <button onClick= {() => props.passedFunc("extreme_weather")}>Extreme Weather</button>
+        <button onClick= {() => props.passedFunc("warming_centers")}>Warming Centers</button>
+        <button onClick= {() => props.passedFunc("cooling_centers")}>Cooling Centers</button>
         <button onClick= {() => props.passedFunc("community_services")}>Community Services</button>
         <button onClick= {() => props.passedFunc("health_services")}>Health Services</button>
       </div>
