@@ -1,4 +1,6 @@
-const Navbar = (props) => {
+import './NavBar.css'
+
+const Navbar = () => {
 
   // define links for each tab
   const link_Home = "";
