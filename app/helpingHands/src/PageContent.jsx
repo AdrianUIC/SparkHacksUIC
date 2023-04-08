@@ -1,13 +1,14 @@
 import ServiceApp from "./ServiceApp"
 
 function PageContent(props) {
-    if (props.content == "home") {
+    const page = props.content.toLowerCase()
+    if (page == "home") {
         return (
             <div className='content'>Home</div>
         )
     } else {
         return (
-            <ServiceApp service={props.content}></ServiceApp>
+            <ServiceApp service={page}></ServiceApp>
         )
     }
 }

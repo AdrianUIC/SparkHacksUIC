@@ -1,4 +1,4 @@
-const Navbar = () => {
+const Navbar = (props) => {
 
   // define links for each tab
   const link_Home = "";
@@ -13,12 +13,13 @@ const Navbar = () => {
     <nav className="navbar">
       <h1>Helping Hands</h1>
       <div className="links">
-        <a href={ link_Home }>Home</a>
-        <a href={ link_WorkForceCenters }>WorkForce Centers</a>
-        <a href={ link_FoodBanks }>Food Banks</a>
-        <a href={ link_Shelters }>Shelters</a>
-        <a href={ link_CommunityCenters }>Community Centers</a>
-        <a href={ link_HealthServices }>Health Services</a>
+        <button onClick= {() => props.passedFunc("home")}>Home</button>
+        <button onClick= {() => props.passedFunc("workforce_centers")}>Workforce Centers</button>
+        <button onClick= {() => props.passedFunc("food_banks")}>Food Banks</button>
+        <button onClick= {() => props.passedFunc("shelters")}>Shelters</button>
+        <button onClick= {() => props.passedFunc("extreme_weather")}>Extreme Weather</button>
+        <button onClick= {() => props.passedFunc("community_centers")}>Community Services</button>
+        <button onClick= {() => props.passedFunc("health_services")}>Health Services</button>
       </div>
     </nav>
   );
