@@ -15,7 +15,7 @@ with open("../app/helpingHands/src/data/community_service_centers.json") as file
             'address': prop['location_address'],
             'hours': prop['hours_of_operation'],
             'phone': prop['phone'],
-            'type': 'community',
+            'type': 'Community Service Centers',
         }
         f['properties'] = new_prop
     features += json_dict['features']
@@ -30,7 +30,7 @@ with open("../app/helpingHands/src/data/family_and_support_services.json") as fi
             'address': prop['address'],
             'hours': 'Not Available',
             'phone': prop['phone_number'],
-            'type': 'family',
+            'type': 'Family and Support Services',
         }
         f['properties'] = new_prop
     features += json_dict['features']
@@ -46,7 +46,7 @@ with open("../app/helpingHands/src/data/senior_centers.json") as file:
             'address': prop['location_address'],
             'hours': prop['hours_of_operation'],
             'phone': prop['phone'],
-            'type': 'senior',
+            'type': 'Senior Centers',
         }
         f['properties'] = new_prop
     features += json_dict['features']
@@ -62,11 +62,11 @@ with open("../app/helpingHands/src/data/libraries.json") as file:
             'address': prop['address'],
             'hours': prop['hours_of_operation'],
             'phone': prop['phone'],
-            'type': 'library',
+            'type': 'Libraries',
         }
         f['properties'] = new_prop
     features += json_dict['features']
 
 community['features'] = features
-with open('community.json', 'w') as file:
+with open('community_services.json', 'w') as file:
     file.write(json.dumps(community))
