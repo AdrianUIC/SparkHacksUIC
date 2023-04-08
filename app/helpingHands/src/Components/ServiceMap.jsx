@@ -54,7 +54,7 @@ function ServiceMap(props) {
     return (
       <MapContainer
         center={[41.8781, -87.6298]}
-        zoom={14}
+        zoom={13}
         scrollWheelZoom={false}
       >
         <TileLayer
