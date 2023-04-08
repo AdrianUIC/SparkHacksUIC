@@ -5,8 +5,7 @@ import { Card, Button } from 'react-bootstrap'
 
 function ServiceInfo(props) {
   if (props.isLoaded) {
-    return (<div class = "scroll"> {
-
+    return (<div className = "scroll"> {
       props.data.features.map(location => (
         <Card>
           <Card.Body>
