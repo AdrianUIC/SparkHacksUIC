@@ -8,9 +8,7 @@ Adam Beigel, Adrian Velazquez, Christian Sanchez, Manh Phan
 
 ## How to run it:
 
-- install dependencies:
-- Clone the git repo
-- install npm
+-   clone git repo
 -   npm install
 -   npm run dev
 
@@ -23,7 +21,13 @@ Our website implements an interactive map using the OpenStreetMaps and Leaflet A
 We chose using react js as the best tool for the job, because the homeless community does not have easy access to a desktop application, but phones can easily reach a website and the generation of the device does not matter as much.
 
 ## How we built it
-First, our team spent several hours brainstorming ideas that align with the theme of the hackathon. We then drew out the framework of our website to get a visual idea on how our website is going to look and perform. Next we got to work on implementing the smaller easier portion of the website first then moving towards the bigger, more advanced elements.  We used a mix of HTML, CSS, JavaScript, React, Python, and leaflet API to add the functionality we needed to the web application.
+First, our team spent several hours brainstorming ideas that align with the theme of the hackathon. We then drew out the framework of our website to get a visual idea on how our website is going to look and perform. 
+![image](https://user-images.githubusercontent.com/113126172/230742633-8e9451c6-a01d-4161-802a-e6e804fef824.png)
+
+
+
+![image](https://user-images.githubusercontent.com/113126172/230742655-ed52dbef-2c3d-4734-ad71-e4bd6661c552.png)
+Next we got to work on implementing the smaller easier portion of the website first then moving towards the bigger, more advanced elements.  We used a mix of HTML, CSS, JavaScript, React, Python, and leaflet API to add the functionality we needed to the web application.
 
 ## Challenges we ran into
 We had challenges with learning and using React and Javascript on the fly via documentation, the bootcamp,  and examples since we had not used this technology prior to this project. Another challenge we ran into was debugging issues where data was not loaded correctly and aspects of our interface did not function as expected. 
