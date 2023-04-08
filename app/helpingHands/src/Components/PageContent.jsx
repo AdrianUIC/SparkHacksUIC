@@ -12,6 +12,9 @@ function PageContent(props) {
                     the homeless communities. We aimed to create a site where all of the resources are displayed in a user friendly manner that is both compatible with mobile devices and
                     desktops. 
                 </div>
+                <div className="hands">
+                    
+                </div>
             </div>
         )
     } else {

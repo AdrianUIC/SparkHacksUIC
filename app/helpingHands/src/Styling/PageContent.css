@@ -1,5 +1,6 @@
 .content {
-        
+        background-size: cover;
+        background-position: center;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -16,4 +17,12 @@
 .content div {
     padding-left: 10rem;
     padding-right: 10rem;
+}
+.hands {
+    background-image: url('../assets/holdingHands.jpg');
+    background-size: cover;
+  background-position: center;
+  height: calc(100vh - (3 * 3rem)); /* Subtract the total height of the other 3 divisions */
+  width: calc(100% - (2 * 10rem));
+  padding: 15rem;
 }
