@@ -1,62 +1,27 @@
-import React from "react";
-import './App.css'
-
 const Navbar = () => {
+
+  // define links for each tab
+  const link_Home = "";
+  const link_WorkForceCenters = "";
+  const link_FoodBanks = "";
+  const link_Shelters = "";
+  const link_CommunityCenters = "";
+  const link_HealthServices = "";
+
+  // define all tabs
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
-      <a className="navbar-brand" href="#">
-        Helping Hand Home
-      </a>
-      <button
-        className="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNavDropdown"
-        aria-controls="navbarNavDropdown"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span className="navbar-toggler-icon"></span>
-      </button>
-
-      <div className="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul className="navbar-nav">
-          <li className="nav-item">
-            <a className="nav-link" href="#">
-              WorkForce Centers
-            </a>
-          </li>
-
-          <li className="nav-item">
-            <a className="nav-link" href="#">
-              Food Banks
-            </a>
-          </li>
-
-          <li className="nav-item">
-            <a className="nav-link" href="#">
-              Shelters
-            </a>
-          </li>
-
-          <li className="nav-item">
-            <a className="nav-link" href="#">
-              Community Centers
-            </a>
-          </li>
-
-          <li className="nav-item">
-            <a className="nav-link" href="#">
-              Health Services
-            </a>
-          </li>
-          
-          
-        </ul>
+    <nav className="navbar">
+      <h1>Helping Hands</h1>
+      <div className="links">
+        <a href={ link_Home }>Home</a>
+        <a href={ link_WorkForceCenters }>WorkForce Centers</a>
+        <a href={ link_FoodBanks }>Food Banks</a>
+        <a href={ link_Shelters }>Shelters</a>
+        <a href={ link_CommunityCenters }>Community Centers</a>
+        <a href={ link_HealthServices }>Health Services</a>
       </div>
     </nav>
-
   );
-};
-
+}
+ 
 export default Navbar;

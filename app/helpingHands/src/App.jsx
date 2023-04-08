@@ -1,15 +1,18 @@
-import Navbar from "./NavBar.jsx";
-import './App.css'
+import Navbar from "./NavBar.jsx";  // component NavBar
+import './NavBar.css';
+import ServiceMap from "./ServiceMap.jsx";   // component Map
+import './ServiceMap.css'; 
 
 function App() {
 
   return (
     <div className="App">
-      <div className="navbar-container">
+      <div className="navbar">
         <Navbar />
       </div>
-      
-      <h1>Helping Hands</h1>
+      <div className="service-map">
+        <ServiceMap service="libraries"/>
+      </div>
     </div>
   )
 }
