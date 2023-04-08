@@ -2,12 +2,13 @@ import React, { useState } from "react";
 import '../Styling/ServiceInfo.css';
 import "leaflet/dist/leaflet.css";
 import { Card } from 'react-bootstrap'
+import {v4 as uuidv4} from 'uuid';
 
 function ServiceInfo(props) {
   if (props.isLoaded) {
     return (<div className = "scroll"> {
       props.data.features.map(location => (
-        <Card>
+        <Card key={uuidv4()}>
           <Card.Body>
             <Card.Title>{location.properties.name}</Card.Title>
             <Card.Text>

@@ -2,6 +2,7 @@ import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import '../Styling/ServiceMap.css';
 import "leaflet/dist/leaflet.css";
 import L from "leaflet"
+import {v4 as uuidv4} from 'uuid';
 
 function ServiceMap(props) {
 
@@ -19,7 +20,7 @@ function ServiceMap(props) {
         {
           props.data.features.map(location => (
             <Marker
-              key={location.properties.address}
+              key={uuidv4()}
               position={[
                 location.geometry.coordinates[1],
                 location.geometry.coordinates[0]
