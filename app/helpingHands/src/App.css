@@ -40,3 +40,8 @@
 .read-the-docs {
   color: #888;
 }
+
+.navbar-brand {
+  background-color: #393e46;
+  color: white;
+}
