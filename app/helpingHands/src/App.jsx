@@ -4,7 +4,7 @@ import PageContent from "./PageContent.jsx"
 import React, { useState } from 'react';
 
 function App() {
-  const [currentPage, setCurrentPage] = useState('Libraries');
+  const [currentPage, setCurrentPage] = useState('home');
   return (
     <div className="app">
         <Navbar passedFunc={setCurrentPage}/>
