@@ -1,3 +1,5 @@
+import './NavBar.css'
+
 const Navbar = () => {
 
   // define links for each tab

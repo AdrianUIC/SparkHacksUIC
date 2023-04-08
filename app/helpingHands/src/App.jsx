@@ -1,3 +1,4 @@
+import './App.css'
 import Navbar from "./NavBar.jsx";  // component NavBar
 import PageContent from "./PageContent.jsx"
 

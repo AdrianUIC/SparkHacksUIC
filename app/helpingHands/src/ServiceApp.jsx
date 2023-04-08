@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from "react";
-import Navbar from "./NavBar.jsx";  // component NavBar
-import './NavBar.css';
+import './ServiceApp.css'
 import ServiceMap from "./ServiceMap.jsx";   // component Map
 import ServiceInfo from "./ServiceInfo.jsx";   // component Map
-import './ServiceApp.css'
 
 function ServiceApp(props) {
   const [data, setData] = useState([]);
