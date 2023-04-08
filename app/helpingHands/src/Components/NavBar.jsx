@@ -12,6 +12,7 @@ const Navbar = (props) => {
 
   // define all tabs
   return (
+    <div>
     <nav className="navbar">
       <h1>Helping Hands</h1>
       <div className="links">
@@ -24,6 +25,7 @@ const Navbar = (props) => {
         <button onClick= {() => props.passedFunc("health_services")}>Health Services</button>
       </div>
     </nav>
+    </div>
   );
 }
  

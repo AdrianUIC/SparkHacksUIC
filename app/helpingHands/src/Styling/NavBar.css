@@ -4,26 +4,30 @@
     align-items: center;
     max-width: 100vw;
     margin: 0 auto;
-    max-height: 25vh;
+    /* max-height: 25vh; */
   }
   .navbar h1 {
-    font-size: 54px;
-    margin-left: 40px;
+    font-size: 40px;
+    margin-left: 25px;
     margin-right: 50px;
-    color: #5aec40;
+    color: #ddff9f;
   }
-  .navbar .links {
-    margin-left: auto;
+  .navbar button {
+    border: 1px solid transparent;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    color: #E4FFFE;
+    background-color: #2b6a6b;
+    cursor: pointer;
+    transition: border-color 0.25s;
   }
-  .navbar a {
-    font-size: 20px;
-    color: #ffffff;
-    margin-right: 30px;
-    text-decoration: none;
-    padding: 3px;
+  .navbar button:hover {
+    color: #E4FFFE;
+    background-color: #609E9E;
   }
-  .navbar a:hover {
-    color: #ffffff;
-    background-color: #60b381;
-    border-radius: 8px;
+  .navbar button:focus,
+  button:focus-visible {
+    outline: 4px auto -webkit-focus-ring-color;
   }
