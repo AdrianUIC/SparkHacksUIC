@@ -29,21 +29,28 @@ const Navbar = () => {
 
           <li className="nav-item">
             <a className="nav-link" href="#">
-              Pricing
+              Food Banks
             </a>
           </li>
 
           <li className="nav-item">
             <a className="nav-link" href="#">
-              Pricing
+              Shelters
             </a>
           </li>
 
           <li className="nav-item">
             <a className="nav-link" href="#">
-              Pricing
+              Community Centers
             </a>
           </li>
+
+          <li className="nav-item">
+            <a className="nav-link" href="#">
+              Health Services
+            </a>
+          </li>
+          
           
         </ul>
       </div>

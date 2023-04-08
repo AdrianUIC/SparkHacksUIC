@@ -5,7 +5,10 @@ function App() {
 
   return (
     <div className="App">
-      <Navbar />
+      <div className="navbar-container">
+        <Navbar />
+      </div>
+      
       <h1>Helping Hands</h1>
     </div>
   )
