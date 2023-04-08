@@ -1,18 +1,12 @@
 import Navbar from "./NavBar.jsx";  // component NavBar
-import './NavBar.css';
-import ServiceMap from "./ServiceMap.jsx";   // component Map
-import './ServiceMap.css'; 
+import ServiceApp from "./ServiceApp.jsx";   // component Map
 
-function App() {
+function App(props) {
 
   return (
-    <div className="App">
-      <div className="navbar">
+    <div className="app">
         <Navbar />
-      </div>
-      <div className="service-map">
-        <ServiceMap service="libraries"/>
-      </div>
+        <ServiceApp service={props.service}/>
     </div>
   )
 }
