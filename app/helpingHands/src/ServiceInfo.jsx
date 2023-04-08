@@ -5,7 +5,8 @@ import { Card, Button } from 'react-bootstrap'
 
 function ServiceInfo(props) {
   if (props.isLoaded) {
-    return (<> {
+    return (<div class = "scroll"> {
+
       props.data.features.map(location => (
         <Card>
           <Card.Body>
@@ -16,7 +17,7 @@ function ServiceInfo(props) {
           </Card.Body>
         </Card>
       ))
-    } </>);
+    } </div>);
   } else {
     return (
       <div>Data is loading...</div>
