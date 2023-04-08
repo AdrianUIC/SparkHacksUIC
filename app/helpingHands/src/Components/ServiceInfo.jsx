@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import '../Styling/ServiceInfo.css';
 import "leaflet/dist/leaflet.css";
-import { Card, Button } from 'react-bootstrap'
+import { Card } from 'react-bootstrap'
 
 function ServiceInfo(props) {
   if (props.isLoaded) {

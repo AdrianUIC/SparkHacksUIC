@@ -36,8 +36,14 @@ function ServiceMap(props) {
                 ]}
               >
                 <div>
-                  <h3>{location.properties.name_}</h3>
-                  <p>{location.properties.address}</p>
+                  <h3>{location.properties.name}</h3>
+                  <p>
+                    Address: {location.properties.address}
+                    <br />
+                    Phone: {location.properties.phone}
+                    <br />
+                    Hours: {location.properties.hours}
+                  </p>
                 </div>
               </Popup>
             </Marker>

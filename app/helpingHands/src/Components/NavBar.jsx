@@ -2,14 +2,6 @@ import '../Styling/NavBar.css'
 
 const Navbar = (props) => {
 
-  // define links for each tab
-  const link_Home = "";
-  const link_WorkForceCenters = "";
-  const link_FoodBanks = "";
-  const link_Shelters = "";
-  const link_CommunityCenters = "";
-  const link_HealthServices = "";
-
   // define all tabs
   return (
     <div>
