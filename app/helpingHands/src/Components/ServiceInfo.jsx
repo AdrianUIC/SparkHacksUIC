@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import './ServiceInfo.css';
+import '../Styling/ServiceInfo.css';
 import "leaflet/dist/leaflet.css";
 import { Card, Button } from 'react-bootstrap'
 

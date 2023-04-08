@@ -1,5 +1,5 @@
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
-import './ServiceMap.css';
+import '../Styling/ServiceMap.css';
 import "leaflet/dist/leaflet.css";
 import L from "leaflet"
 

@@ -1,4 +1,4 @@
-import './NavBar.css'
+import '../Styling/NavBar.css'
 
 const Navbar = (props) => {
 
