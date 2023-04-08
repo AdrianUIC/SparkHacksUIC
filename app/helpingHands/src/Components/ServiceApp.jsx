@@ -4,10 +4,11 @@ import ServiceMap from "./ServiceMap.jsx";   // component Map
 import ServiceInfo from "./ServiceInfo.jsx";   // component Map
 
 function ServiceApp(props) {
-  const [data, setData] = useState([]);
+  const [data, setData] = useState();
   const [dataIsLoaded, setDataIsLoaded] = useState(false);
 
   function getData(service) {
+    console.log('getting data')
     return fetch(
       `./src/data/${service}.json`,
       {
@@ -29,7 +30,7 @@ function ServiceApp(props) {
 
   useEffect(() => {
     getData(props.service)
-  }, [])
+  }, [props.service])
 
   return (
     <div className="service-app">
