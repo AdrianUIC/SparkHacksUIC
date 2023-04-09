@@ -1,5 +1,6 @@
 import ServiceApp from "./ServiceApp"
-import '../Styling/PageContent.css'
+import '../styles/PageContent.css'
+
 function PageContent(props) {
     const page = props.content.toLowerCase()
     if (page == "home") {

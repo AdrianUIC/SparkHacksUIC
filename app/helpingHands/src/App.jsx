@@ -1,6 +1,6 @@
-import './Styling/App.css'
-import Navigation from "./Components/Navigation.jsx";  // component NavBar
-import PageContent from "./Components/PageContent.jsx"
+import './styles/App.css'
+import Navigation from "./components/Navigation.jsx";  // component NavBar
+import PageContent from "./components/PageContent.jsx"
 import React, { useState } from 'react';
 
 function App() {

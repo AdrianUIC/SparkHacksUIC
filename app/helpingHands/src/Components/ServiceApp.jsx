@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import '../Styling/ServiceApp.css'
+import '../styles/ServiceApp.css'
 import ServiceMap from "./ServiceMap.jsx";   // component Map
 import ServiceInfo from "./ServiceInfo.jsx";   // component Map
 

@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import '../Styling/ServiceInfo.css';
+import '../styles/ServiceInfo.css';
 import "leaflet/dist/leaflet.css";
 import { Card } from 'react-bootstrap'
 import {v4 as uuidv4} from 'uuid';
