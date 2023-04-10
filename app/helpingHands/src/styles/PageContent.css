@@ -14,9 +14,8 @@
     padding-top: 4rem;
 }
 
-.content div {
-    padding-left: 10rem;
-    padding-right: 10rem;
+.content p {
+    padding: 0 30rem;
 }
 .hands {
     background-image: url('../assets/holdingHands.jpg');
