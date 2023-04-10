@@ -7,7 +7,7 @@ function ServiceInfo(props) {
   if (props.isLoaded) {
     return (<div className = "scroll"> {
       props.data.features.map(location => (
-        <Card key={uuidv4()}>
+        <Card key={uuidv4()} className="mx-5" style={{width: '24rem'}}>
           <Card.Body>
             <Card.Title>{location.properties.name}</Card.Title>
             <Card.Text>
