@@ -5,3 +5,8 @@
 * {
     scroll-behavior: smooth;
 }
+
+.leaflet-container {
+    height: 80vh;
+    width: 50vw;
+}

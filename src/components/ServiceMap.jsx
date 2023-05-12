@@ -12,7 +12,7 @@ function ServiceMap(props) {
   });
 
   if (props.isLoaded) {
-    // If data is loaded, show the map with markers
+    // if data is loaded, show the map with markers
     return (
       <MapContainer center={[41.8781, -87.6298]} zoom={14} scrollWheelZoom={false}>
         {

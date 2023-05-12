@@ -33,11 +33,11 @@ function ServiceApp(props) {
  
   // TODO: set service-map height
   return (
-    <div className="service-app">
-      <div className="service-info">
+    <div className="flex justify-between p-6">
+      <div className="flex-shrink-0">
         <ServiceInfo data={data} isLoaded={dataIsLoaded}/>
       </div>
-      <div className="service-map">
+      <div className="flex-grow">
         <ServiceMap data={data} isLoaded={dataIsLoaded}/>
       </div>
     </div>
