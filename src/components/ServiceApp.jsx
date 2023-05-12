@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
-import '../styles/ServiceApp.css'
-import ServiceMap from "./ServiceMap.jsx";   // component Map
-import ServiceInfo from "./ServiceInfo.jsx";   // component Map
+import ServiceMap from "./ServiceMap.jsx";
+import ServiceInfo from "./ServiceInfo.jsx";
 
 function ServiceApp(props) {
   const [data, setData] = useState();
@@ -30,8 +29,9 @@ function ServiceApp(props) {
 
   useEffect(() => {
     getData(props.service)
-  }, [props.service])
-
+  }, [props.service]);
+ 
+  // TODO: set service-map height
   return (
     <div className="service-app">
       <div className="service-info">
@@ -41,7 +41,7 @@ function ServiceApp(props) {
         <ServiceMap data={data} isLoaded={dataIsLoaded}/>
       </div>
     </div>
-  )
+  );
 }
 
 export default ServiceApp
