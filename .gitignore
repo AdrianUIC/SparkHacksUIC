@@ -29,7 +29,7 @@ pnpm-debug.log*
 lerna-debug.log*
 
 # node
-# node_modules
-# dist
-# dist-ssr
-# *.local
+node_modules
+dist
+dist-ssr
+*.local
