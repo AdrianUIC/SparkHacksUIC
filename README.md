@@ -8,6 +8,8 @@ Adam Beigel, Adrian Velazquez, Christian Sanchez, Manh Phan
 
 ## How to run it:
 
+- ** Must have Node.JS Installed in your system **
+
 - clone git repo
 - npm install
 - npm run dev
