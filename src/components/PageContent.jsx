@@ -6,7 +6,7 @@ function PageContent(props) {
     // show home page
     if (page == "home") {
         return (
-            <div>
+            <div className="flex-grow">
                 <h1>Home</h1>
                 <div className="hands"></div>
             </div>

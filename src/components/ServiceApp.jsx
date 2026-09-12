@@ -30,16 +30,11 @@ function ServiceApp(props) {
   useEffect(() => {
     getData(props.service)
   }, [props.service]);
- 
-  // TODO: set service-map height
+
   return (
-    <div className="flex justify-between p-6">
-      <div className="flex-shrink-0">
-        <ServiceInfo data={data} isLoaded={dataIsLoaded}/>
-      </div>
-      <div className="flex-grow">
-        <ServiceMap data={data} isLoaded={dataIsLoaded}/>
-      </div>
+    <div className="flex justify-between lg:flex-row flex-col-reverse w-screen">
+      <ServiceInfo data={data} isLoaded={dataIsLoaded} />
+        <ServiceMap data={data} isLoaded={dataIsLoaded} />
     </div>
   );
 }

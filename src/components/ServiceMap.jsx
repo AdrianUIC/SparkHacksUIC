@@ -14,43 +14,41 @@ function ServiceMap(props) {
   if (props.isLoaded) {
     // if data is loaded, show the map with markers
     return (
-      <MapContainer center={[41.8781, -87.6298]} zoom={14} scrollWheelZoom={false}>
-        {
-          props.data.features.map(location => (
-            <Marker
-              key={uuidv4()}
-              position={[
-                location.geometry.coordinates[1],
-                location.geometry.coordinates[0]
-              ]}
-              onClick={() => {
-                setActiveLocation(location);
-              }}
-              icon={customMarker}
-            >
-              <Popup
+      <div className='lg:w-2/3 h-1/2'>
+        <MapContainer center={[41.8781, -87.6298]} zoom={14} scrollWheelZoom={false}>
+          {
+            props.data.features.map(location => (
+              <Marker
+                key={uuidv4()}
                 position={[
                   location.geometry.coordinates[1],
                   location.geometry.coordinates[0]
                 ]}
+                onClick={() => {
+                  setActiveLocation(location);
+                }}
+                icon={customMarker}
               >
-                <div>
-                  <h3>{location.properties.name}</h3>
-                  <p>
-                    Address: {location.properties.address}
-                    <br />
-                    Phone: {location.properties.phone}
-                    <br />
-                    Hours: {location.properties.hours}
-                  </p>
-                </div>
-              </Popup>
-            </Marker>
-          ))
-        }
+                <Popup
+                  position={[
+                    location.geometry.coordinates[1],
+                    location.geometry.coordinates[0]
+                  ]}
+                >
+                  <div>
+                    <h1>{location.properties.name}</h1>
+                    <p> Address: {location.properties.address} </p>
+                    <p> Phone: {location.properties.phone} </p>
+                    <p> Hours: {location.properties.hours} </p>
+                  </div>
+                </Popup>
+              </Marker>
+            ))
+          }
 
-        <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors' />
-      </MapContainer>
+          <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors' />
+        </MapContainer>
+      </div>
     );
   }
 

@@ -5,7 +5,7 @@ import React, { useState } from 'react';
 function App() {
   const [currentPage, setCurrentPage] = useState('home');
   return (
-    <div className="w-full overflow-hidden">
+    <div className="flex flex-col flex-wrap h-screen">
         <Navigation passedFunc={setCurrentPage}/>
         <PageContent content={currentPage}/>
     </div>
